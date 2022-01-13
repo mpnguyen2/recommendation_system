@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Rating form</title>
+</head>
+<body>
+    <form action="/search/" method="GET">
+        <ol>
+            {% for book in book_list %}
+                <li>{{ book }} <input type='number' name='rating_list' min='1' max='5'></input></li>
+            {% endfor %}
+        </ol>
+        <input type="submit" value="Rate">
+    </form>
+    <p>Thanks for your rating!</p>
+</body>
+</html>
