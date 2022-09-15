@@ -134,4 +134,4 @@ dmypy.json
 *.pickle
 
 # Key
-secret_keys.py
+secret_fields.py
